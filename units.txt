@@ -1,0 +1,47 @@
+AP = Action points, how much stuff a unit can do per turn
+HP = Hit points, how much damage a unit can take
+DMG = Damage, the damage that a unit potentially serves
+Armour = Flat damage reduction
+Base movement cost (BMC) = The base cost for a unit to move a tile
+Range = Max range
+
+Future:
+Minimum range
+Damage types / penetration
+Melee vs range type attacks
+Stamina
+Leftover AP conversion into stamina
+Morale
+Accuracy vs Evasion
+First movement costs extra AP
+
+
+Human militia (spear):
+25 hp, 2 armour, 60 AP
+Thrust attack, 20 AP, 5-9 dmg, 2 range
+Precise thrust, 32 AP, 9-11 dmg, 2 range
+BMC 4 / tile
+
+
+Goblin stabba:
+15 hp
+4 - 6 dmg (piercing)
+
+Goblin slasha:
+17 hp
+5 - 7 dmg (slashing)
+
+Human militia archer:
+19 hp
+9 - 11 dmg (piercing, ranged) (range 2-60)
+5 - 7 dmg (blunt, melee)
+
+Goblin shoota:
+13 hp
+6 - 8 dmg (piercing, ranged) (range 1-30)
+3 - 5 dmg (blunt, melee)
+
+Knight (dismounted):
+50 hp
+Attack 1: 15 - 30 dmg (piercing)
+Attack 2: 19 - 24 dmg (slashing)
