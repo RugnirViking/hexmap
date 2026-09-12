@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ddqybpsxquvqp"]
+
+[ext_resource type="Script" uid="uid://rpxrxhuswbgg" path="res://scripts/hex_grid_chunk.gd" id="1_dv2l2"]
+[ext_resource type="Script" uid="uid://cgrcsg75s407u" path="res://scripts/hex_mesh.gd" id="2_j4x7o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_af83l"]
+vertex_color_use_as_albedo = true
+roughness = 0.74
+
+[node name="HexGridChunk" type="Node3D" unique_id=1181551967]
+script = ExtResource("1_dv2l2")
+
+[node name="HexMesh" type="MeshInstance3D" parent="." unique_id=756362870]
+material_override = SubResource("StandardMaterial3D_af83l")
+script = ExtResource("2_j4x7o")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="HexMesh" unique_id=1444442548]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HexMesh/StaticBody3D" unique_id=1888887365]

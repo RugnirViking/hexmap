@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://clgiv8r2386px"]
+
+[ext_resource type="Script" uid="uid://dubgsn0radtni" path="res://scripts/hex_grid.gd" id="1_7qcy4"]
+[ext_resource type="PackedScene" uid="uid://bg4anl6hpkops" path="res://scenes/hex_cell.tscn" id="2_ehgfd"]
+[ext_resource type="PackedScene" uid="uid://ddqybpsxquvqp" path="res://scenes/hex_grid_chunk.tscn" id="3_ehgfd"]
+[ext_resource type="Texture2D" uid="uid://61a6qo1chbpy" path="res://res/noise.png" id="4_0n64j"]
+[ext_resource type="Script" uid="uid://cfsr8ejn51r2m" path="res://scripts/hex_map_editor.gd" id="5_1q0qu"]
+[ext_resource type="Script" uid="uid://dalcyh0b727f0" path="res://scripts/hex_map_camera.gd" id="6_ehgfd"]
+
+[sub_resource type="Environment" id="Environment_t850l"]
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="HexGrid" type="Node3D" unique_id=962350748 node_paths=PackedStringArray("camera")]
+script = ExtResource("1_7qcy4")
+hex_cell = ExtResource("2_ehgfd")
+chunk_scene = ExtResource("3_ehgfd")
+camera = NodePath("HexMapCamera/Swivel/Stick/Camera3D")
+noise_source = ExtResource("4_0n64j")
+
+[node name="HexMapEditor" type="CanvasLayer" parent="." unique_id=1280946472 node_paths=PackedStringArray("hex_grid", "camera", "color_buttons", "elevation_slider", "elevation_label", "brush_size_slider", "brush_size_label", "no_color_button", "apply_elevation_toggle", "labels_toggle")]
+script = ExtResource("5_1q0qu")
+hex_grid = NodePath("..")
+camera = NodePath("../HexMapCamera/Swivel/Stick/Camera3D")
+color_buttons = [NodePath("PalettePanel/MarginContainer/VBoxContainer/HBoxContainer/Color0"), NodePath("PalettePanel/MarginContainer/VBoxContainer/HBoxContainer/Color1"), NodePath("PalettePanel/MarginContainer/VBoxContainer/HBoxContainer/Color2"), NodePath("PalettePanel/MarginContainer/VBoxContainer/HBoxContainer/Color3")]
+elevation_slider = NodePath("PalettePanel/MarginContainer/VBoxContainer/ElevationSlider/ElevationSlider")
+elevation_label = NodePath("PalettePanel/MarginContainer/VBoxContainer/ElevationSlider/ElevationLabel")
+brush_size_slider = NodePath("PalettePanel/MarginContainer/VBoxContainer/SizeSlider/BrushRadius")
+brush_size_label = NodePath("PalettePanel/MarginContainer/VBoxContainer/SizeSlider/BrushSizeLabel")
+no_color_button = NodePath("PalettePanel/MarginContainer/VBoxContainer/HBoxContainer/NoneButton")
+apply_elevation_toggle = NodePath("PalettePanel/MarginContainer/VBoxContainer/ApplyElevation")
+labels_toggle = NodePath("PalettePanel/MarginContainer/VBoxContainer/LabelsToggle")
+
+[node name="PalettePanel" type="PanelContainer" parent="HexMapEditor" unique_id=797347273]
+offset_right = 172.0
+offset_bottom = 99.0
+
+[node name="MarginContainer" type="MarginContainer" parent="HexMapEditor/PalettePanel" unique_id=1547216803]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HexMapEditor/PalettePanel/MarginContainer" unique_id=643265093]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer" unique_id=350636384]
+layout_mode = 2
+
+[node name="NoneButton" type="Button" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1172338821]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "None"
+
+[node name="Color0" type="Button" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1322305047]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "Ocean"
+
+[node name="Color1" type="Button" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1257012655]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "Sand"
+
+[node name="Color2" type="Button" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1353504253]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "Grass"
+
+[node name="Color3" type="Button" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=186450404]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+text = "Snow"
+
+[node name="ElevationSlider" type="HBoxContainer" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer" unique_id=1940074530]
+layout_mode = 2
+
+[node name="ElevationSlider" type="HSlider" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/ElevationSlider" unique_id=591956994]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+rounded = true
+
+[node name="ElevationLabelText" type="Label" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/ElevationSlider" unique_id=190485252]
+layout_mode = 2
+text = "Height:"
+
+[node name="ElevationLabel" type="Label" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/ElevationSlider" unique_id=1756810196]
+layout_mode = 2
+text = "00"
+
+[node name="SizeSlider" type="HBoxContainer" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer" unique_id=1180899229]
+layout_mode = 2
+
+[node name="BrushRadius" type="HSlider" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/SizeSlider" unique_id=378033864]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 6.0
+rounded = true
+
+[node name="BrushSizeLabelText" type="Label" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/SizeSlider" unique_id=326272813]
+layout_mode = 2
+text = "Radius:"
+
+[node name="BrushSizeLabel" type="Label" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer/SizeSlider" unique_id=57030490]
+layout_mode = 2
+text = "00"
+
+[node name="ApplyElevation" type="CheckButton" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer" unique_id=1682859776]
+layout_mode = 2
+text = "Apply Height"
+
+[node name="LabelsToggle" type="CheckButton" parent="HexMapEditor/PalettePanel/MarginContainer/VBoxContainer" unique_id=279987116]
+layout_mode = 2
+text = "Show Cell Labels"
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=308377733]
+transform = Transform3D(0.8660254, 0.40957603, -0.28678823, 0, 0.57357645, 0.81915206, 0.5, -0.7094065, 0.49673176, 0, 0, 0)
+shadow_enabled = true
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="." unique_id=1751486252]
+transform = Transform3D(0.2756374, -0.5513571, -0.7874195, 0, 0.81915206, -0.57357645, 0.9612617, 0.15809911, 0.22578894, 0, 0, 0)
+light_energy = 0.3
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1136245405]
+environment = SubResource("Environment_t850l")
+
+[node name="HexMapCamera" type="Node3D" parent="." unique_id=1061944573]
+script = ExtResource("6_ehgfd")
+
+[node name="Swivel" type="Node3D" parent="HexMapCamera" unique_id=717398256]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="Stick" type="Node3D" parent="HexMapCamera/Swivel" unique_id=1437164427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 45)
+
+[node name="Camera3D" type="Camera3D" parent="HexMapCamera/Swivel/Stick" unique_id=315961815]
