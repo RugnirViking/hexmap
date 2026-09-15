@@ -1,3 +1,4 @@
+#Last updated 15.09.2026
 AP = Action points, how much stuff a unit can do per turn
 HP = Hit points, how much damage a unit can take
 DMG = Damage, the damage that a unit potentially serves
@@ -17,31 +18,31 @@ First movement costs extra AP
 
 
 Human militia (spear):
-25 hp, 2 armour, 60 AP
+25 hp, 2 armour, 60 AP, BMC 4 / tile
 Thrust attack, 20 AP, 5-9 dmg, 2 range
 Precise thrust, 32 AP, 9-11 dmg, 2 range
-BMC 4 / tile
-
-
-Goblin stabba:
-15 hp
-4 - 6 dmg (piercing)
-
-Goblin slasha:
-17 hp
-5 - 7 dmg (slashing)
 
 Human militia archer:
-19 hp
-9 - 11 dmg (piercing, ranged) (range 2-60)
-5 - 7 dmg (blunt, melee)
+19 hp, 1 armour, 60 AP, BMC 5 / tile
+Quick shot, 25 AP, 4-7 dmg, 2-30 range
+Aimed shot, 30 AP, 7-13 dmg, 3-60 range
+
+Goblin stabba:
+15 hp, 0 armour, 60 AP, 4 BMC / tile
+Rusty stabby, 15 AP, 2-4 dmg, 1 range
+
+Goblin slasha:
+17 hp, 1 armour, 60 AP, 5 BMC / tile
+Rusty slashy, 20 AP, 4-7 dmg, 1 range
+
 
 Goblin shoota:
-13 hp
-6 - 8 dmg (piercing, ranged) (range 1-30)
-3 - 5 dmg (blunt, melee)
+13 hp, 0 armour, 60 AP, 5 BMC / tile
+Cheaty far-stabby, 25 AP, 2-6 dmg, 1-20 range
+Deevis far-stabby, 30 AP, 4-8 dmg, 2-30 range
+Panic basha, 20 AP, 2-4 dmg, 1 range
 
-Knight (dismounted):
-50 hp
-Attack 1: 15 - 30 dmg (piercing)
-Attack 2: 19 - 24 dmg (slashing)
+Knight Errant (dismounted):
+50 hp, 7 armour, 80 AP, 5 BMC / tile
+Errantly thrust, 25 AP, 15-27 dmg, 1 range
+Errantly slash, 30 AP, 19-26 dmg, 1 range
