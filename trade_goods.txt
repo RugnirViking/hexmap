@@ -88,3 +88,31 @@ Marble:
 		flow of marble has historically been dominated by the Dwarves, as few others Chintabeings have the required strength
 		and artisanry required to extract marble in great quantities.
 		Much to the chagrin of several traders, who allege that Dwarven guilds are bad for business, and a detriment to all.
+Dwarfshroom:
+	Traits:
+		Basic,
+		Food,
+		Agriculture
+	Description:
+		A dimunitive type of fungi, said to have been refined by the Dwarves through selectively breeding the densest,
+		most delicious, and aesthetically pleasing Dwarfshrooms of every harvest, which is often, as they only are known to
+		grow within the cavern-farms of Dwarven holds, and thus their growth is mostly unaffected by the seasons.
+		Some claim that the Dwarfshrooms always were of their present-day characteristics, and hypothesise that the Dwarves
+		physique came to resemble that of the Dwarfshrooms, not that the Dwarves selsectively grew them to those characteristics.
+Cotton:
+	Traits:
+		Basic,
+		Agriculture,
+		Material,
+		Crafts
+	Description:
+		Cotton and other fibers are usually further refined into other materials, often turned into clothes, which are then
+		bought and sold by every sort of person.
+Wool:
+	Traits:
+		Basic,
+		Material,
+		Crafts
+	Description:
+		One of the softest fibers after being treated, harbested from sheep, and used to make the most comfortable beds
+		and pillows all across the realm.
