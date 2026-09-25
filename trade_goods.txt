@@ -14,6 +14,14 @@
 	crafting something, whether it is for handicraft, tools for farming, or even weapons. 
 # -	Material: These goods are generally not very useful by themselves, but used as a material in crafting, construction,
 	or the like. They generally do not expire, and basic materials are usually traded in bulk.
+# -	Mining: Basic mining goods are usually gathered in large quantities through mines or quarries, through physically demanding
+	labour, often requiring the use of pickaxes or heavier tools to gather efficiently. The higher end mining goods,
+	in contrast, usually still require brawn, but also brain and often specialised tools, to not just gather efficiently,
+	but ensure that the workers gathering it survive that endeavour.
+	The priority of the latter point usually depends on the employer. The intelligent of which will at least weigh the
+	cost of losing a well-trained worker, versus the increased extraction rate of avoiding cowardly and wholly unnecessary
+	"safety measures". 
+	
 	
 
 Wheat
@@ -32,8 +40,51 @@ Wood # We might split this into raw wood, lumber, different types of raw wood an
 		Crafts
 		Material
 	Description:
-		Nearly everywhere, removing the forests from which wood usually from, comes allows for most Chintabeings to have more space
-		to grow, in a perhaps cruel twist of fate, the living trees from which trade good comes from, get turned into
-		neatly carved, sanded, and otherwise processed carcasses to construct and decorate
+		Nearly everywhere, removing forests allow for most Chintabeings to have more space to grow, and gain more wood.
+		In an ironic twist of fate, the living trees from which the trade goods comes from, are turned into
+		neatly carved, sanded, or otherwise processed malformed carcasses of themselves, placed down the same places from
+		which they were cut down. A cruel mockery, which we see every day, of which so many of us think nothing of.
+		- Excerpt from Elf Philosophy 101.
 Stone
-	
+	Traits:
+		Basic
+		Construction,
+		Crafts
+		Material
+		Mining
+	Description:
+		My floor is made of stone, my walls are made of stone, my roof is made of stone, my table is made of stone,
+		my chair is made of stone, my plate is made of stone, my bed is made of stone, my door is made of stone,
+		I go to work in a building made of stone, I was born in a cradle made of stone, I am protected by walls of stone,
+		and whether I am amongst the living or the dead, I will always ROCK AND STONE.
+		- Dwarven proverb, originating from a miner's chant.
+Iron ore
+	Traits:
+		Basic,
+		Crafts,
+		Material,
+		Mining
+	Description:
+		One of the most important resources in existence, used to create tools and weapons of iron, a respectably durable
+		material. In some places, iron is further refined along with coal to create an even stronger alloy.
+Coal:
+	Traits:
+		Basic,
+		Crafts,
+		Material,
+		Mining,
+	Description:
+		Whether gained as a result of a failed cooking attempt, or the hard labour of Chintabeings, coal is a useful
+		source of fuel, used in alchemy, and is certain to stain everything it comes in contact with.
+Marble:
+	Traits:
+		Basic,
+		Construction,
+		Crafts,
+		Material,
+		Mining,
+	Description:
+		Stone, but nicer, somehow. Also more difficult to extract without breaking it into too small pieces. Thus this the
+		flow of marble has historically been dominated by the Dwarves, as few others Chintabeings have the required strength
+		and artisanry required to extract marble in great quantities.
+		Much to the chagrin of several traders, who allege that Dwarven guilds are bad for business, and a detriment to all.
