@@ -1,0 +1,39 @@
+# This document will contain all trade goods in the game
+# It also contains more information about the trade goods, such as their traits.
+# Full trait list, and explanation:
+# -	Basic: means that the good is at the first stage of production trees, assigned to all goods which are extracted from farms,
+	mines, etc. The price of this good will determine the prices of more advanced goods in the area, but huge fluctuations
+	in its availability will often lead to the destruction of livelihoods, famines, and other unpleasant events.
+	Then again, great crises may lead to even greater profits...
+# -	Food: means that the good is edible for most chintabeings. A minimum local production or import of goods with this trait,
+	are necessary to ensure that this location does not starve.
+# -	Grain: means that the good is a type of grain, which can be important for different reasons,
+	one of which include the desire for some cities to have a varied diet.
+# -	Agriculture: refers to goods which are the results of agriculture
+# -	Crafts: refers to goods which is used in, or part of, a significant amount of production chains which involve
+	crafting something, whether it is for handicraft, tools for farming, or even weapons. 
+# -	Material: These goods are generally not very useful by themselves, but used as a material in crafting, construction,
+	or the like. They generally do not expire, and basic materials are usually traded in bulk.
+	
+
+Wheat
+	Traits: 
+		Basic
+		Food
+		Grain
+		Agriculture
+	Description: 
+		Wheat is a staple grain in most nations with temperate environments. Although not a lucrative good for the average trader,
+		those who control the flow of this good, will have power beyond what even profits can buy.
+Wood # We might split this into raw wood, lumber, different types of raw wood and lumber, scrap wood, etc. someday
+	Traits:
+		Basic
+		Construction
+		Crafts
+		Material
+	Description:
+		Nearly everywhere, removing the forests from which wood usually from, comes allows for most Chintabeings to have more space
+		to grow, in a perhaps cruel twist of fate, the living trees from which trade good comes from, get turned into
+		neatly carved, sanded, and otherwise processed carcasses to construct and decorate
+Stone
+	
