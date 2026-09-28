@@ -1,26 +1,47 @@
 # This document will contain all trade goods in the game
 # It also contains more information about the trade goods, such as their traits.
 # Full trait list, and explanation:
-# -	Basic: means that the good is at the first stage of production trees, assigned to all goods which are extracted from farms,
+# -	Basic:
+	Basic goods are at the first stage of production trees, assigned to all goods which are extracted from farms,
 	mines, etc. The price of this good will determine the prices of more advanced goods in the area, but huge fluctuations
 	in its availability will often lead to the destruction of livelihoods, famines, and other unpleasant events.
 	Then again, great crises may lead to even greater profits...
-# -	Food: means that the good is edible for most chintabeings. A minimum local production or import of goods with this trait,
+# -	Food: 
+	Food goods are edible for most chintabeings. A minimum local production or import of goods with this trait,
 	are necessary to ensure that this location does not starve.
-# -	Grain: means that the good is a type of grain, which can be important for different reasons,
+# -	Grain:
+	Grain-type goods are grains, which can be important for different reasons,
 	one of which include the desire for some cities to have a varied diet.
-# -	Agriculture: refers to goods which are the results of agriculture
-# -	Crafts: refers to goods which is used in, or part of, a significant amount of production chains which involve
+# -	Agriculture:
+	Agricultural goods refers to goods which are the results of agriculture
+# -	Crafts:
+	Crafts goods refer to goods which are used in, or part of, a significant amount of production chains which involve
 	crafting something, whether it is for handicraft, tools for farming, or even weapons. 
-# -	Material: These goods are generally not very useful by themselves, but used as a material in crafting, construction,
+# -	Material:
+	These goods are generally not very useful by themselves, but used as a material in crafting, construction,
 	or the like. They generally do not expire, and basic materials are usually traded in bulk.
-# -	Mining: Basic mining goods are usually gathered in large quantities through mines or quarries, through physically demanding
+# -	Mining: 
+	Basic mining goods are usually gathered in large quantities through mines or quarries, through physically demanding
 	labour, often requiring the use of pickaxes or heavier tools to gather efficiently. The higher end mining goods,
 	in contrast, usually still require brawn, but also brain and often specialised tools, to not just gather efficiently,
 	but ensure that the workers gathering it survive that endeavour.
 	The priority of the latter point usually depends on the employer. The intelligent of which will at least weigh the
 	cost of losing a well-trained worker, versus the increased extraction rate of avoiding cowardly and wholly unnecessary
 	"safety measures". 
+# -	Refined:
+	Refined goods are often the result of refining/processing one or more basic goods into a more useful items for some production trees.
+	Generally speaking, the more refined a good is, the higher its value, reflecting the labour and material cost in producing it.
+	Although more stages of refinement generally increase the value of a good, it does also increase their niche usage.
+	This effectively means that they cannot be sold for profit, if at all, in most places, save for those which 
+	specifically require that good. 
+	An example: Iron ingots are needed in most places, but iron gears are usually only in-demand in places with high development,
+	for use in for example manufacturies or advanced infrastructure (like heavy drawbridges).
+# - Meat:
+	Meat goods are usually gained from butchering animals. They are usually edible, though not particularly tasty uncooked.
+	Most meat goods spoil relatively quickly, unless they are preserved, either through drying or another method.
+	They count as food for most chintabeings, though most prefer to cook it before consumption.
+	Some chintabeings avoid the consumption of meat, which is useful to know before one brings a caravan packed with meat
+	to a town consisting of vegetarians.
 	
 	
 
@@ -99,6 +120,7 @@ Dwarfshroom:
 		grow within the cavern-farms of Dwarven holds, and thus their growth is mostly unaffected by the seasons.
 		Some claim that the Dwarfshrooms always were of their present-day characteristics, and hypothesise that the Dwarves
 		physique came to resemble that of the Dwarfshrooms, not that the Dwarves selsectively grew them to those characteristics.
+
 Cotton:
 	Traits:
 		Basic,
@@ -108,6 +130,7 @@ Cotton:
 	Description:
 		Cotton and other fibers are usually further refined into other materials, often turned into clothes, which are then
 		bought and sold by every sort of person.
+
 Wool:
 	Traits:
 		Basic,
@@ -116,3 +139,60 @@ Wool:
 	Description:
 		One of the softest fibers after being treated, harbested from sheep, and used to make the most comfortable beds
 		and pillows all across the realm.
+
+Iron ingot:
+	Traits:
+		Material,
+		Crafts,
+		Refined,
+	Description:
+		Iron ingots or other semi-standardised mostly uniform iron items are transported around the world to be smelted
+		down for various uses. It is an essential good for most places with enough wealth to afford them, 
+		as they not only are necessary for crafting cost-effective durable tools, but also enable the construction or
+		crafting of many things for which wood or stone cannot be used effectively.
+		
+Poultry:
+	Traits:
+		Basic,
+		Food,
+		Meat
+	Description:
+	Poultry is full of protein and usually from chickens but also other types of domesticated birds.
+
+Cow meat:
+	Traits:
+		Basic,
+		Food,
+		Meat
+	Description:
+	Cow meat is delicious and particularly important for the wealthier Chintabeings who can afford it.
+		
+Sheep meat:
+	Traits:
+		Basic,
+		Food,
+		Meat
+	Description:
+	We were going to call this mutton but when looking it up, we found out that mutton can also refer to goat meat,
+	but not consistently, so it is easier to just say sheep meat and goat meat.
+	More valued in some cultures but also places where they are raised for wool.
+		
+Goat meeat:
+	Traits:
+		Basic,
+		Food,
+		Meat
+	Description:
+	Goats are stubborn pricks which can scale mountains in ways which make you question whether these beings truly are non-magical.
+	The meat of a goat is particularly delicious if the goat has spent the last 5 days jousting against your legs.
+		
+Wild game meat:
+	Traits:
+		Basic,
+		Food,
+		Meat
+	Description:
+	A collection of meat gained from wild game, usually through hunting. Often collected in less developed areas,
+	or dedicated hunting zones.
+	
+		
