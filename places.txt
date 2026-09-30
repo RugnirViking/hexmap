@@ -1,0 +1,43 @@
+# Places
+# Name
+# Initial population
+# Initial industries (should we add these here?)
+# Description
+
+Place:	Serenia
+	IniPop: 100000
+	IniIndustry: Flour, bread, beer
+	Description: Birdsong. You see blue. Perhaps this is what a merchant-admiral sees,
+	when they lead their armada across the grand oceans. Unlike those stories, you see no waves, hear no monsters,
+	and feel no unease. Though you know that not all skies are alike. As you sit up, you wonder if you are still alive.
+	Pinching your arm, you truly realise why Serenia was named such. A sea of gold fills your vision -
+	though its value only reaches that of gold only in the most dire circumstances.
+	Wheat fields, nearly as far as you can see. As you do the rest of your morning rituals,
+	preparing for the final leg of the journey to Serenia,
+	you thank the Gods of trade for not just blessing you with this experience,
+	but also for ensuring that you arrived just before the harvest.
+	You begin thinking of which places would be the best for you to ferry the wheat to, which goods they offer there,
+	how long it takes, and by the time you reach the city gates, you have a few trade routes in mind.
+	
+Place: Dwaron's Hold
+	IniPop: 1000000
+	IniIndustry:
+		Dwarven deep iron mining
+		Dwarven smeltery
+		Dwarven armourer
+		Dwarven smithy
+		Dwarven machinist
+		Dwarven engineering guild
+	Description:
+		Established millennia ago, by Dwaron, one of the oldest dwarves in recorded history, this hold is among the
+		few Dwarven ancient high holds, said to be the origins of Dwarven existence, which itself is a mystery.
+		Dwaron's Hold is the centre of all Dwarves for thousands of kilometres, an official and unofficial capital for
+		millions of Dwarves, where the most ambitious or prominent among them come to meet. 
+		The hold, the Dwarven word for their stronghold cities, can be described as a labyrinth, anthill, citadel, and much else;
+		every description would be true for some. It has naturally sprawled for millennia, but has also been rebuilt,
+		restructured, and redistricted many times. THis is not just to ensure efficiency for the many goods which need to be
+		transported all throughout the hold, but also to ensure that at least the greenest dwarflings have a chance at
+		navigating this fortified metropolis.
+		Foreign dignitaries, traders, and tourists are generally not prioritised. Some say that the council of Dwaron's Hold
+		intentionally let this consideration slip, and the outsiders which do not give up in whatever endeavour brought them
+		here, will be regarded with more respect, having shown a level of resilience, or stubborness, which Dwarves respect.
